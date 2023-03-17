@@ -7,7 +7,13 @@ from time import gmtime, strftime
 
 def index(request):
     if request.method == 'POST':
-        jsonData = json.loads(request.body.decode('utf-8'))
+        print('hello')
+        try:
+            jsonData = json.loads(request.body)
+            # print(json_data)
+        except:
+            jsonData = json.loads(request.body.decode('utf-8'))
+        print(request.body)
         print(jsonData)
         msg = jsonData["msg"]
         res = bot.ChatBot.getBot().response(msg)
@@ -21,3 +27,8 @@ def index(request):
         })
     else:
         return JsonResponse({"desc": "Bad request"}, status=400)
+
+
+def api_index(request):
+    json_data = json.loads(request.body)
+    print(json_data)
