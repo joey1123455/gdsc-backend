@@ -11,6 +11,7 @@ def index(request):
         msg = jsonData["msg"]
         res = bot.ChatBot.getBot().response(msg)
         time = strftime("%Y-%m-%d %H:%M:%S", gmtime())
+        print(res)
         return JsonResponse({
             "desc": "Success",
             "ques": msg,
