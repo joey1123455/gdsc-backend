@@ -119,7 +119,7 @@ CORS_ALLOWED_ORIGINS = [
     # "http://127.0.0.1:8000",
     # "http://127.0.0.1:3001",
     # 'http://34.136.104.12:8000',
-    '*',
+    'http://*',
 ]
 
 CSRF_TRUSTED_ORIGINS = [
