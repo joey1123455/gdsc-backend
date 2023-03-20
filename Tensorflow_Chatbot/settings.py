@@ -116,9 +116,9 @@ CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_ORIGINS = [
     # "https://example.com",
     # "https://sub.example.com",
-    "http://127.0.0.1:8000",
-    "http://127.0.0.1:3001",
-    'http://34.136.104.12:8000',
+    # "http://127.0.0.1:8000",
+    # "http://127.0.0.1:3001",
+    # 'http://34.136.104.12:8000',
     '*',
 ]
 
