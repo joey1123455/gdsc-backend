@@ -18,7 +18,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'corsheaders',
+    "corsheaders",
     # 'Api.apps.ApiConfig',
 ]
 
@@ -111,12 +111,15 @@ STATIC_ROOT = "staticfiles"
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
+CORS_ALLOW_ALL_ORIGINS = True
+
 CORS_ALLOWED_ORIGINS = [
     # "https://example.com",
     # "https://sub.example.com",
     "http://127.0.0.1:8000",
     "http://127.0.0.1:3001",
     'http://34.136.104.12:8000',
+    '*',
 ]
 
 CSRF_TRUSTED_ORIGINS = [
