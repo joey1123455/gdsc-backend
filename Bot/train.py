@@ -1,5 +1,6 @@
 import nltk
 from nltk.stem.lancaster import LancasterStemmer
+from tensorflow.python.framework import ops
 
 import numpy as np
 import tensorflow as tf
@@ -57,7 +58,8 @@ training = np.array(training)
 train_x = list(training[:, 0])
 train_y = list(training[:, 1])
 
-tf.reset_default_graph()
+# tf.reset_default_graph()
+ops.reset_default_graph()
 net = tflearn.input_data(shape=[None, len(train_x[0])])
 net = tflearn.fully_connected(net, 8)
 net = tflearn.fully_connected(net, 8)
