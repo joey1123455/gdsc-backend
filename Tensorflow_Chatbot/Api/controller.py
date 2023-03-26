@@ -34,19 +34,21 @@ def news(request):
         url = f"https://newsapi.org/v2/everything?q=depression&apiKey=85f9b07a8b1d4fc4b1005b6adc77a9bb"
         response = requests.get(url)
         data = response.json()
-        article = data['articles']
+        articles = data['articles']
         j = {}
-        for i in article:
+        x = 0
+        for i in articles:
             source = i['source']['name']
             article_title = i['title']
-            j[article_title]= {'source': source,
+            article_key= "".join(article_title.split())
+            j[x] = {'source': source,
             'author': i['author'],
             'title': article_title,
             'image_url': i['urlToImage'],
             'post_url': i['url'],
             'description': i['description']}
-
+            x += 1
             
-        return JsonResponse({"articles": j}, status=200)
+        return JsonResponse({"article_list": j}, status=200)
     else:
         return JsonResponse({"desc": "Bad request"}, status=400)

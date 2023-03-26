@@ -34,17 +34,13 @@ def locate(request):
                 name = i["name"]
                 vicinity = i["vicinity"]
                 html_attributions = i["photos"][0]["html_attributions"][0]
-                if i["opening_hours"]["open_now"] == False: operation_time = "Closed at this time. Opening hours: 10AM WAT"
+                if i["opening_hours"]["open_now"] == False: operation_time = "Closed at this time."
                 else: operation_time = "Presently Open"
             except:
                 continue
             if i["business_status"] == "OPERATIONAL":
                 try:
-                    # j["name"] = name
-                    # j["vicinity"] = vicinity
-                    # j["html_attributions"] = html_attributions
-                    # j["operation_time"] = operation_time
-                    nearest[name] = {
+                    nearest[x] = {
                         "name": name,
                         "vicinity": vicinity,
                         "googleMap_link": html_attributions,
