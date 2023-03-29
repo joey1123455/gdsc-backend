@@ -40,7 +40,6 @@ def news(request):
         for i in articles:
             source = i['source']['name']
             article_title = i['title']
-            article_key= "".join(article_title.split())
             j[x] = {'source': source,
             'author': i['author'],
             'title': article_title,

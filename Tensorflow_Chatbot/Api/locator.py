@@ -37,8 +37,8 @@ def locate(request):
                 import re
                 match = re.search(r'href=[\'"]?([^\'" >]+)"', html_attributions)
                 if match:
-                    html_attributions = match.group(0)
-                    print(html_attributions)
+                    html_attributions = match.group(1) 
+                    print(match.group(0))
                 if i["opening_hours"]["open_now"] == False: operation_time = "Closed at this time."
                 else: operation_time = "Presently Open"
             except:
