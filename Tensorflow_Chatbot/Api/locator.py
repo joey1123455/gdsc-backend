@@ -34,11 +34,11 @@ def locate(request):
                 name = i["name"]
                 vicinity = i["vicinity"]
                 html_attributions = i["photos"][0]["html_attributions"][0]
-                import re
-                match = re.search(r'href=[\'"]?([^\'" >]+)"', html_attributions)
-                if match:
-                    html_attributions = match.group(1) 
-                    print(match.group(0))
+                # import re
+                # match = re.search(r'href=[\'"]?([^\'" >]+)"', html_attributions)
+                # if match:
+                #     html_attributions = match.group(1) 
+                #     print(match.group(0))
                 if i["opening_hours"]["open_now"] == False: operation_time = "Closed at this time."
                 else: operation_time = "Presently Open"
             except:
