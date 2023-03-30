@@ -1,6 +1,6 @@
 {"intents": [
         {"tag": "greeting",
-         "patterns": ["hi", "how are you", "is anyone there?", "hello", "good day","good morning","good afternoon","good evening","yo!","xup","how far", "whats up", "hey"],
+         "patterns": ["hi", "how are you", "is anyone there?", "hello", "good day","good morning","good afternoon","good evening","yo!","xup","how far", "whats up"],
          "responses": ["hello!, what's your name? (format: my name is...)",  "hi there,what's your name?  (format: my name is...) " ,"good day!,what's your name? (format: my name is...) "],
          "context_set": ""
         },
@@ -9,8 +9,8 @@
          "responses": [ "talk to you later", "goodbye!", "nice chatting with you."],
          "context_set": ""
         },
-        {"tag": " positivefeelings",
-         "patterns": ["fine", "great", "good", " happy","better", "amazed", "fantastic"],
+        {"tag": "positivefeelings",
+         "patterns": ["fine", "great", "good", "happy","better", "amazed", "fantastic"],
          "responses": ["that's nice to hear, what can i help you with? (format:i want...)"],
          "context_set": ""
         },
@@ -81,17 +81,17 @@
         },
         {"tag": "failure",
          "patterns": ["i failed my exams","i failed my exams","i failed an exam","i failed an exam","i didnt do well in an exam"],
-         "responses": "it's okay to fail: failure is a natural part of life and it happens to everyone at some point. it's important to remember that failure doesn't define you as a person, and it's an opportunity to learn and grow.",
+         "responses": ["it's okay to fail: failure is a natural part of life and it happens to everyone at some point. it's important to remember that failure doesn't define you as a person, and it's an opportunity to learn and grow."],
          "context_set": ""
         },
         {"tag": "failed test",
          "patterns": ["i failed my test","i failed a test today","i didnt do well on a test today","i didnt do well on a test","i failed a test today"],
-         "responses": "Learn from the experience: Failure can be a valuable learning experience. Take the time to reflect on what you've learned and how you can apply that knowledge in the future.",
+         "responses": ["Learn from the experience: Failure can be a valuable learning experience. Take the time to reflect on what you've learned and how you can apply that knowledge in the future."],
          "context_set": ""
         },
         {"tag": "feeling like a failure",
          "patterns": ["i feel i am a failure","i feel like a failure","i feel i have failed","i have failed"],
-         "responses": "Keep a positive attitude: A positive attitude can help you overcome challenges and stay motivated. Instead of focusing on the negative, try to see the silver lining and look for opportunities to improve and succeed.",
+         "responses": ["Keep a positive attitude: A positive attitude can help you overcome challenges and stay motivated. Instead of focusing on the negative, try to see the silver lining and look for opportunities to improve and succeed."],
          "context_set": ""
         },
         {"tag": "game",
@@ -130,7 +130,7 @@
          "context_set": ""
         },
         {"tag": "referall",
-         "patterns": [""],
+         "patterns": [" "],
          "responses": ["oops! i don't understand kindly reply in one or two words. how are you feeling today?"],
          "context_set": ""
         },
@@ -834,7 +834,7 @@
                },
                {
                 "tag": "greetings",
-                "patterns": ["hi there", "hello","haroo","yo","wassup", "hi", "hey", "holla", "hello"],
+                "patterns": ["hi there","haroo","yo","wassup", "hey", "holla"],
                 "responses": ["hello thanks for checking in", "hi there, how can i help you"],
                 "context": [""]
             },

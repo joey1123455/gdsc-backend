@@ -8,18 +8,18 @@ import requests
 
 def index(request):
     if request.method == 'POST':
-        print('hello')
         try:
             jsonData = json.loads(request.body)
-            # print(json_data)
         except:
             jsonData = json.loads(request.body.decode('utf-8'))
-        print(request.body)
-        print(jsonData)
         msg = jsonData["msg"]
+        msg = msg.lower()
+        print(msg)
         res = bot.ChatBot.getBot().response(msg)
         time = strftime("%Y-%m-%d %H:%M:%S", gmtime())
         print(res)
+        if res == None:
+            res = 'Im sorry it seems im not smart enough to deal with your question yet, i am constantly being retrained. I\'d advice clicking the therapist near you buton'
         return JsonResponse({
             "desc": "Success",
             "ques": msg,
