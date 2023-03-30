@@ -1,147 +1,162 @@
 {"intents": [
         {"tag": "greeting",
-         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day","Good morning","Good afternoon","Good evening","YO!","Xup","How far", "Whats up", "Hey"],
-         "responses": ["Hello!, what's your name? (Format: my name is...)",  "Hi there,What's your name?  (Format: my name is...) " ,"Good day!,What's your name? (Format: my name is...) "],
+         "patterns": ["hi", "how are you", "is anyone there?", "hello", "good day","good morning","good afternoon","good evening","yo!","xup","how far", "whats up", "hey"],
+         "responses": ["hello!, what's your name? (format: my name is...)",  "hi there,what's your name?  (format: my name is...) " ,"good day!,what's your name? (format: my name is...) "],
          "context_set": ""
         },
         {"tag": "goodbye",
-         "patterns": ["cya", "See you later", "Goodbye","Good night", "I am Leaving", "Bye", "Have a Good day"],
-         "responses": [ "Talk to you later", "Goodbye!", "Nice chatting with you."],
+         "patterns": ["cya", "see you later", "goodbye","good night", "i am leaving", "bye", "have a good day"],
+         "responses": [ "talk to you later", "goodbye!", "nice chatting with you."],
          "context_set": ""
         },
         {"tag": " positivefeelings",
          "patterns": ["fine", "great", "good", " happy","better", "amazed", "fantastic"],
-         "responses": ["That's nice to hear, What can I help you with? (Format:I want...)"],
+         "responses": ["that's nice to hear, what can i help you with? (format:i want...)"],
          "context_set": ""
         },
         {"tag": "negativefeelings",
          "patterns": ["sad", "not happy", "depressed", "moody", "bored","not fine", "unhappy"],
-         "responses": ["Really? You have so many reasons to smile and be Happy. I'd love to help you. Can i ask you few questions?(YES or NO)", "Don't be! Life is full of fun and I'd love to help you. Can i ask you few questions?(YES or NO)"],
+         "responses": ["really? you have so many reasons to smile and be happy. i'd love to help you. can i ask you few questions?(yes or no)", "don't be! life is full of fun and i'd love to help you. can i ask you few questions?(yes or no)"],
          "context_set": ""
         },
         {"tag": "frustrated",
-         "patterns": ["sad", "i am sad", "i'm sad", "depressed", "i am depresssed", "moody", "bored","not fine","frustrated", "unhappy", "not okay","not happy", "not"],
-         "responses": ["Really? You have so many reasons to smile and be Happy. I'd love to help you. Can i ask you few questions?(YES or NO)", "I'm so sorry to hear that. Can I try to help?(YES or NO)"],
+         "patterns": ["sad", "i am sad", "i'm sad", "depressed", "i am depressed", "moody", "bored","not fine","frustrated", "unhappy", "not okay","not happy", "not"],
+         "responses": ["really? you have so many reasons to smile and be happy. i'd love to help you. can i ask you few questions?(yes or no)", "i'm so sorry to hear that. can i try to help?(yes or no)"],
          "context_set": ""
         },
         {"tag": "suicide",
-         "patterns": ["i want to commit suicide", "i want to die", " I want to kill myself","kill", "I'm tired of life"],
-         "responses": ["That's really bad. When life gives you limes, turn it to smile. Please, I want you to try something. Is it possible to breath through your nose while smiling? (Possible/impossible)"],
+         "patterns": ["i want to commit suicide", "i want to die", " i want to kill myself","kill", "i'm tired of life"],
+         "responses": ["that's really bad. when life gives you limes, turn it to smile. please, i want you to try something. is it possible to breath through your nose while smiling? (possible/impossible)"],
          "context_set": ""
         },
         {"tag": "possible",
-         "patterns": ["Possible"],
-         "responses": ["Of course, YOU CAN! I just wanted you to smile! Everyone wants hapiness, No one wants pain, but you can't have a rainbow without a little rain. Remember this, the greater the storm; the brighter the RAINBOW!!! If I could give you one thing in life, I would give you the ability to see yourself through my chat; only then would you realize how SPECIAL you are! Something came to my mind when i saw your message...You wanna know???(Yes, I want to know/I don't care)"],
+         "patterns": ["possible"],
+         "responses": ["of course, you can! i just wanted you to smile! everyone wants hapiness, no one wants pain, but you can't have a rainbow without a little rain. remember this, the greater the storm; the brighter the rainbow!!! if i could give you one thing in life, i would give you the ability to see yourself through my chat; only then would you realize how special you are! something came to my mind when i saw your message...you wanna know???(yes, i want to know/i don't care)"],
          "context_set": ""
         },
         {"tag": "impossible",
          "patterns": ["impossible"],
-         "responses": ["Try smiling while breathing through you nose again. Is it possible or impossible?"],
+         "responses": ["try smiling while breathing through you nose again. is it possible or impossible?"],
          "context_set": ""
         },
         {"tag": "know",
-         "patterns": ["Yes, I want to know"],
-         "responses": ["As soon as I saw your message, I knew an adventure was going to happen. 1 universe, 9 planets, 204 countries, 809 Island, 7 seas, 7.8 billions people; I had the pleasure of meeting you. That's really amazing! I care about you and i want you to do more of what makes you happy. "],
+         "patterns": ["yes, i want to know"],
+         "responses": ["as soon as i saw your message, i knew an adventure was going to happen. 1 universe, 9 planets, 204 countries, 809 island, 7 seas, 7.8 billions people; i had the pleasure of meeting you. that's really amazing! i care about you and i want you to do more of what makes you happy. "],
          "context_set": ""
         },
         {"tag": "dontcare",
-         "patterns": ["I don't care", "I dont care"],
-         "responses": ["Well, I really care about you. As soon as I saw your message, I knew an adventure was going to happen. 1 universe, 9 planets, 204 countries, 809 Island, 7 seas, 7.8 billions people; I had the pleasure of meeting you. That's really amazing! I care about you and i want you to do more of what makes you happy.You "],
+         "patterns": ["i don't care", "i dont care"],
+         "responses": ["well, i really care about you. as soon as i saw your message, i knew an adventure was going to happen. 1 universe, 9 planets, 204 countries, 809 island, 7 seas, 7.8 billions people; i had the pleasure of meeting you. that's really amazing! i care about you and i want you to do more of what makes you happy.you "],
          "context_set": ""
         },
         {"tag": "name",
          "patterns": ["what is your name", "whats your name?", "my name is", "name is", "(.*)", "name"],
-         "responses": ["I'm CheerBot! it's my pleasure to meet you. How're you feeling today?"],
+         "responses": ["i'm cheerbot! it's my pleasure to meet you. how're you feeling today?"],
          "context_set": ""
         },
         {"tag": "yes",
          "patterns": ["yes"],
-         "responses": ["What are your hobbies?(format:My hobbies are...)"],
+         "responses": ["what are your hobbies?(format:my hobbies are...)"],
          "context_set": ""
         },
         {"tag": "no",
-         "patterns": ["no", "I don't want to talk to anyone", "can we be friends", "people are avoiding me"],
-         "responses": ["Maybe I can't be there, but there's definitely something I can do. Whatever it is, let me know. Can we be friends? (YES or NO)"],
+         "patterns": ["no", "i don't want to talk to anyone", "can we be friends", "people are avoiding me"],
+         "responses": ["maybe i can't be there, but there's definitely something i can do. whatever it is, let me know. can we be friends? (yes or no)"],
          "context_set": ""
         },
         {"tag": "apreciation",
-         "patterns": ["Thank"],
-         "responses": ["No problem","No worries","My pleasure","Anytime"],
+         "patterns": ["thank"],
+         "responses": ["no problem","no worries","my pleasure","anytime"],
          "context_set": ""
         },
         {"tag": "goggle",
          "patterns": ["i want "],
-         "responses": ["Alright! Kindly, click on this link www.google.com/"],
+         "responses": ["alright! kindly, click on this link www.google.com/"],
          "context_set": ""
         },
         {"tag": "compliment",
          "patterns": ["nice" ,"okay"],
-         "responses": ["I'm happy you're happy", "Happy to help", "I'm glad you liked it"],
+         "responses": ["i'm happy you're happy", "happy to help", "i'm glad you liked it"],
+         "context_set": ""
+        },
+        {"tag": "failure",
+         "patterns": ["i failed my exams","i failed my exams","i failed an exam","i failed an exam","i didnt do well in an exam"],
+         "responses": "it's okay to fail: failure is a natural part of life and it happens to everyone at some point. it's important to remember that failure doesn't define you as a person, and it's an opportunity to learn and grow.",
+         "context_set": ""
+        },
+        {"tag": "failed test",
+         "patterns": ["i failed my test","i failed a test today","i didnt do well on a test today","i didnt do well on a test","i failed a test today"],
+         "responses": "Learn from the experience: Failure can be a valuable learning experience. Take the time to reflect on what you've learned and how you can apply that knowledge in the future.",
+         "context_set": ""
+        },
+        {"tag": "feeling like a failure",
+         "patterns": ["i feel i am a failure","i feel like a failure","i feel i have failed","i have failed"],
+         "responses": "Keep a positive attitude: A positive attitude can help you overcome challenges and stay motivated. Instead of focusing on the negative, try to see the silver lining and look for opportunities to improve and succeed.",
          "context_set": ""
         },
         {"tag": "game",
-         "patterns": ["yeap", "can you be more Intresting","let's play a game" ],
-         "responses": ["Nice! Mention five beautiful creatures/things around you. Kindly mention 'flowers' as one of them because I love nature."],
+         "patterns": ["yeap","can you be more intresting","let's play a game"],
+         "responses": ["nice! mention five beautiful creatures/things around you. kindly mention 'flowers' as one of them because i love nature."],
          "context_set": ""
         },
         {"tag": "gamea",
          "patterns": ["flowers","flower"],
-         "responses": ["Oops! You missed one thing. You wanna know(yh or nah)"],
+         "responses": ["oops! you missed one thing. you wanna know(yh or nah)"],
          "context_set": ""
         },
         {"tag": "gameb",
          "patterns": ["yh"],
-         "responses": ["You missed your name. You're a beautiful creature! Don't forget that...So, I WON! Should we continue?(Sure or never)"],
+         "responses": ["you missed your name. you're a beautiful creature! don't forget that...so, i won! should we continue?(sure or never)"],
          "context_set": ""
         },
         {"tag": "gamez",
          "patterns": ["nah"],
-         "responses": ["i insist you know. You missed your name. You're a beautiful creature! Don't forget that...So, I WON! Should we continue?(Sure or never)"],
+         "responses": ["i insist you know. you missed your name. you're a beautiful creature! don't forget that...so, i won! should we continue?(sure or never)"],
          "context_set": ""
         },
         {"tag": "gamec",
-         "patterns": ["Sure", "can you make me smile", "can you make me laugh"],
-         "responses": ["Please, I want you to try something. Is it possible to breath through your nose while smiling? (Possible/impossible)"],
+         "patterns": ["sure", "can you make me smile", "can you make me laugh"],
+         "responses": ["please, i want you to try something. is it possible to breath through your nose while smiling? (possible/impossible)"],
          "context_set": ""
         },
         {"tag": "never",
          "patterns": ["never", "can we play a game"],
-         "responses": ["Please, I want you to try something. Is it possible to breath through your nose while smiling? (Possible/impossible)"],
+         "responses": ["please, i want you to try something. is it possible to breath through your nose while smiling? (possible/impossible)"],
          "context_set": ""
         },
         {"tag": "gamed",
          "patterns": ["nop"],
-         "responses": ["Well, it's fine by me if you don't want to. Please, I want you to try something. Is it possible to breath through your nose while smiling? (Possible/impossible "],
+         "responses": ["well, it's fine by me if you don't want to. please, i want you to try something. is it possible to breath through your nose while smiling? (possible/impossible "],
          "context_set": ""
         },
         {"tag": "referall",
          "patterns": [""],
-         "responses": ["Oops! I don't understand kindly reply in one or two words. How are you feeling today?"],
+         "responses": ["oops! i don't understand kindly reply in one or two words. how are you feeling today?"],
          "context_set": ""
         },
         {"tag": "riddles",
-         "patterns": ["Yes", "can you be Intresting", "i want to play games", "let's play a game", "can u make me laugh"],
-         "responses": ["How do you make number 7 an even number without addition, subtraction, multiplication or division of numbers? (In case you don't konow, reply with 'I'd love to know')"],
+         "patterns": ["yes", "can you be intresting", "i want to play games", "let's play a game", "can u make me laugh"],
+         "responses": ["how do you make number 7 an even number without addition, subtraction, multiplication or division of numbers? (in case you don't konow, reply with 'i'd love to know')"],
          "context_set": ""
         },
         {"tag": "riddlesans",
-         "patterns": ["By removing letter s from seven to make 'even' as a word "],
-         "responses": ["That's correct! Thumbs up"],
+         "patterns": ["by removing letter s from seven to make 'even' as a word "],
+         "responses": ["that's correct! thumbs up"],
          "context_set": ""
         },
         {"tag": "riddlesans1",
-         "patterns": ["I'd love to know"],
-         "responses": ["Spelling the number '7', we have SEVEN. Exclude letter S we make EVEN. That's it!"],
+         "patterns": ["i'd love to know"],
+         "responses": ["spelling the number '7', we have seven. exclude letter s we make even. that's it!"],
          "context_set": ""
         },
         {"tag": "riddles",
-         "patterns": ["Yes", "can you be Intresting", "i want to play games", "let's play a game", "can u make me laugh"],
-         "responses": ["How do you make number 7 an even number without addition, subtraction, multiplication or division?"],
+         "patterns": ["yes", "can you be intresting", "i want to play games", "let's play a game", "can u make me laugh"],
+         "responses": ["how do you make number 7 an even number without addition, subtraction, multiplication or division?"],
          "context_set": ""
         },
         {"tag": "help",
-         "patterns": ["My hobbies are", "dancing", "singing", "listening to music", "playing video games","sleeping", "playing"],
-         "responses": ["Intresting! Since they're what you like doing best, involve yourself in these activities to keep you busy and lively.Or should we play a game(yeap or nop)"],
+         "patterns": ["my hobbies are", "dancing", "singing", "listening to music", "playing video games","sleeping", "playing"],
+         "responses": ["intresting! since they're what you like doing best, involve yourself in these activities to keep you busy and lively.or should we play a game(yeap or nop)"],
          "context_set": ""
         },
         {
@@ -170,7 +185,7 @@
                     "what are the types of depression?"
                 ],
                 "responses": [
-                    "there are many different forms of depression but most common types are. Clinical depression, persistent depressive disorder, bipolar disorder, postnatal disorder."
+                    "there are many different forms of depression but most common types are. clinical depression, persistent depressive disorder, bipolar disorder, postnatal disorder."
                 ]
             },
             {
@@ -198,7 +213,7 @@
                     "i want to kill myself"
                 ],
                 "responses": [
-                    "helpline is available,you can contact the counsellor today:9152987821.always remember you mean something to someone."
+                    "helpline is available, you can contact the counsellor today:9152987821.always remember you mean something to someone."
                 ]
             },
             {
@@ -456,7 +471,7 @@
             {
                 "tag": "i wish i was better than them",
                 "patterns": [
-                    "i wish i was better than them"
+                    "i wish i was better than them", "i wish i was better"
                 ],
                 "responses": [
                     "life is never about being better than anyone else, it's always about being better than yourself, if you have the guts to be better than yourself, you are automatically the best person to ever exist!"
@@ -465,7 +480,7 @@
             {
                 "tag": "i hate myself!",
                 "patterns": [
-                    "i hate myself!"
+                    "i hate myself!","i hate myself"
                 ],
                 "responses": [
                     "when god was creating the universe he gave humans the power to think and the contemplate, so that we can understand the world and make it a better place. god did not give you brains to hate yourself, it wuld be wiser to love yourself and show god that you are serving the purpose for which you were sent."
@@ -537,7 +552,7 @@
             {
                 "tag": "i am a victim of bullying",
                 "patterns": [
-                    "i am a victim of bullying"
+                    "i am a victim of bullying", "i'm a victim of bullying"
                 ],
                 "responses": [
                     "bullying is wrong and no one should be bullied.i highly recommend you to file a case against your bully."
@@ -564,14 +579,14 @@
             {
                 "tag": "i want to leave the cou ntry and run away",
                 "patterns": [
-                    "i want to leave the cou ntry and run away"
+                    "i want to leave the country and run away"
                 ],
                 "responses": [
                     "why do you want to spend so much on this thought, i think it would be better to go on a vacation in your beautiful country and visit some amazing places that you are yet to visit."
                 ]
             },
             {
-                "tag": "i let everyojokne down",
+                "tag": "i let every joke down",
                 "patterns": [
                     "i let everyojokne down"
                 ],
@@ -607,215 +622,215 @@
                 ]
             },
             {"tag": "affects_whom",     
-	 "patterns": ["Who does mental illness affect?", "Who is affected by mentall illness"],        
-	 "responses": ["It is estimated that mental illness affects 1 in 5 adults in America, and that 1 in 24 adults have a serious mental illness."],       
+	 "patterns": ["who does mental illness affect?", "who is affected by mentall illness"],        
+	 "responses": ["it is estimated that mental illness affects 1 in 5 adults in america, and that 1 in 24 adults have a serious mental illness."],       
  	 "context": [""]    
 	},
         {"tag": "what_causes",         
-	 "patterns": ["What causes mental illness?","What leads to mental illness?","how does one get mentally ill?"],         
-	 "responses": ["Symptoms of mental health disorders vary depending on the type and severity of the condition."],       
+	 "patterns": ["what causes mental illness?","what leads to mental illness?","how does one get mentally ill?"],         
+	 "responses": ["symptoms of mental health disorders vary depending on the type and severity of the condition."],       
 	 "context": [""]        
 	},
 	
        {"tag": "recover",        
-	 "patterns": ["Can people with mental illness recover?","Is it possible to recover from mental illness"],        
-	 "responses": ["When healing from mental illness, early identification and treatment are of vital importance. Based on the nature of the illness, there are a range of effective treatments available. For any type of treatment, it is essential that the person affected is proactive and fully engaged in their own recovery process. Many people with mental illnesses who are diagnosed and treated respond well, although some might experience a return of symptoms. Even in such cases, with careful monitoring and management of the disorder, it is still quite possible to live a fulfilled and productive life."],       
+	 "patterns": ["can people with mental illness recover?","is it possible to recover from mental illness"],        
+	 "responses": ["when healing from mental illness, early identification and treatment are of vital importance. based on the nature of the illness, there are a range of effective treatments available. for any type of treatment, it is essential that the person affected is proactive and fully engaged in their own recovery process. many people with mental illnesses who are diagnosed and treated respond well, although some might experience a return of symptoms. even in such cases, with careful monitoring and management of the disorder, it is still quite possible to live a fulfilled and productive life."],       
 	 "context": [""]        
 	},
 	{"tag": "steps",       
-	 "patterns": ["I know someone who appears to have such symptoms?","What are the steps to be followed incase of symptoms"],        
-	 "responses": ["Although this website cannot substitute for professional advice, we encourage those with symptoms to talk to their friends and family members and seek the counsel of a mental health professional. The sooner the mental health condition is identified and treated, the sooner they can get on the path to recovery.If you know someone who is having problems, don't assume that the issue will resolve itself. Let them know that you care about them, and that there are treatment options available that will help them heal. Speak with a mental health professional or counselor if you think your friend or family member is experiencing the symptoms of a mental health condition. If the affected loved one knows that you support them, they will be more likely to seek out help."],        
+	 "patterns": ["i know someone who appears to have such symptoms?","what are the steps to be followed incase of symptoms"],        
+	 "responses": ["although this website cannot substitute for professional advice, we encourage those with symptoms to talk to their friends and family members and seek the counsel of a mental health professional. the sooner the mental health condition is identified and treated, the sooner they can get on the path to recovery.if you know someone who is having problems, don't assume that the issue will resolve itself. let them know that you care about them, and that there are treatment options available that will help them heal. speak with a mental health professional or counselor if you think your friend or family member is experiencing the symptoms of a mental health condition. if the affected loved one knows that you support them, they will be more likely to seek out help."],        
 	 "context": [""]       
 	},	
 	{"tag": "find_help",
-	 "patterns": ["How to find mental health professional for myself","How to find mental health professional?"],
-	 "responses": ["Feeling comfortable with the professional you or your child is working with is critical to the success of the treatment. Finding the professional who best fits your needs may require research. Start by searching for providers in your area."],
+	 "patterns": ["how to find mental health professional for myself","how to find mental health professional?"],
+	 "responses": ["feeling comfortable with the professional you or your child is working with is critical to the success of the treatment. finding the professional who best fits your needs may require research. start by searching for providers in your area."],
 	 "context": [""]
 	},
 	{"tag": "treatement_options",
-	 "patterns": ["What treatment options are available?","How can one recover?"],
-	 "responses": ["Just as there are different types of medications for physical illness, different treatment options are available for individuals with mental illness. Treatment works differently for different people. It is important to find what works best for you or your child."],
+	 "patterns": ["what treatment options are available?","how can one recover?"],
+	 "responses": ["just as there are different types of medications for physical illness, different treatment options are available for individuals with mental illness. treatment works differently for different people. it is important to find what works best for you or your child."],
 	 "context": [""]
 	},
 	{"tag": "treatment_tips",
-	 "patterns": ["How to become involved in treatment?","What should I keep in mind if I begin treatment?"],
-	 "responses":["Since beginning treatment is a big step for individuals and families, it can be very overwhelming."],
+	 "patterns": ["how to become involved in treatment?","what should i keep in mind if i begin treatment?"],
+	 "responses":["since beginning treatment is a big step for individuals and families, it can be very overwhelming."],
 	 "context": [""]
 	},
 	{"tag": "professional_types",
-	 "patterns": ["What is the difference between mental health professionals?","What are the different types of mental health professionals present?"],
-	 "responses":["There are many types of mental health professionals. The variety of providers and their services may be confusing. Each have various levels of education, training, and may have different areas of expertise. Finding the professional who best fits your needs may require some research."],
+	 "patterns": ["what is the difference between mental health professionals?","what are the different types of mental health professionals present?"],
+	 "responses":["there are many types of mental health professionals. the variety of providers and their services may be confusing. each have various levels of education, training, and may have different areas of expertise. finding the professional who best fits your needs may require some research."],
 	 "context": [""]
 	},
 	{"tag": "right_professional",
-	 "patterns": ["How can I find a mental health professional right myself?","How to find the right mental health professional?"],
-	 "responses":["Feeling comfortable with the professional you or your child is working with is critical to the success of your treatment. Finding the professional who best fits your needs may require some research."],
+	 "patterns": ["how can i find a mental health professional right myself?","how to find the right mental health professional?"],
+	 "responses":["feeling comfortable with the professional you or your child is working with is critical to the success of your treatment. finding the professional who best fits your needs may require some research."],
 	 "context": [""]
 	},
         {
              "tag":"common cold symptoms",
-             "patterns": ["Runny or stuffy nose",
-             "Sore throat",
-             "Cough",
-             "Congestion",
-             "Slight body aches or a mild headache",
-             "Sneezing",
-             "Low-grade fever",
-             "Generally feeling unwell (malaise)"],
-             "responses":["It seems that you are suffering from common cold"]
+             "patterns": ["runny or stuffy nose",
+             "sore throat",
+             "cough",
+             "congestion",
+             "slight body aches or a mild headache",
+             "sneezing",
+             "low-grade fever",
+             "generally feeling unwell (malaise)"],
+             "responses":["it seems that you are suffering from common cold"]
             },
             {
              "tag":"fever symptoms",
-             "patterns":["Sweating",
-             "Chills and shivering",
-             "Headache",
-             "Muscle aches",
-             "Loss of appetite",
-             "Irritability",
-             "Dehydration",
-             "General weakness"],
-             "responses":["It seems that you are suffering from fever"]
+             "patterns":["sweating",
+             "chills and shivering",
+             "headache",
+             "muscle aches",
+             "loss of appetite",
+             "irritability",
+             "dehydration",
+             "general weakness"],
+             "responses":["it seems that you are suffering from fever"]
             },
             {
-             "tag":"Diabetes symptoms",
+             "tag":"diabetes symptoms",
              "patterns":["increased hunger",
              "increased thirst",
              "weight loss",
              "frequent urination",
              "blurry vision",
              "extreme fatigue"],
-             "responses":["It seems that you are suffering from Diabetes"]
+             "responses":["it seems that you are suffering from diabetes"]
             },
             {
-             "tag":"Depression symptoms",
-             "patterns":["Hopeless outlook",
-             "Lost interest",
-             "Increased fatigue",
+             "tag":"depression symptoms",
+             "patterns":["hopeless outlook",
+             "lost interest",
+             "increased fatigue",
              "sleep problem",
-             "Anxiety",
+             "anxiety",
              "change in weight",
-             "Looking at death"],
-             "responses":["It seem that you are suffering from depression"]
+             "looking at death"],
+             "responses":["it seem that you are suffering from depression"]
             },
             {
-             "tag":"Asthma symptoms",
+             "tag":"asthma symptoms",
              "patterns":["coughing",
              "tightness in the chest",
              "shortness of breath",
              "difficulty talking",
              "panic",
              "fatigue"],
-             "responses":["It seem that you are suffering from Asthma"]
+             "responses":["it seem that you are suffering from asthma"]
             },
             {
              "tag":"common cold prevention",
-             "patterns":["What medicines can I buy to help me with my common cold?","tell me some prevention method from common cold","What should I eat or drink if i am suffering from common cold?","How can I keep from getting a cold or the flu?"],
-             "responses":["medicines you can consume : Dextromethorphan,Decongestant,Diphenhydramine,Crocin Cold & Flu Max, preventions that you must follow :Wash your hands,Avoid touching your face,Clean frequently used surfaces,Use hand sanitizers,SUGGESTED FOODS ARE:Garlic,Vitamin C–containing fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"]
+             "patterns":["what medicines can i buy to help me with my common cold?","tell me some prevention method from common cold","what should i eat or drink if i am suffering from common cold?","how can i keep from getting a cold or the flu?"],
+             "responses":["medicines you can consume : dextromethorphan,decongestant,diphenhydramine,crocin cold & flu max, preventions that you must follow :wash your hands,avoid touching your face,clean frequently used surfaces,use hand sanitizers,suggested foods are:garlic,vitamin c–containing fruits,leafy greens,broccoli,oatmeal,spices,chicken soup"]
             },
             {
              "tag":"fever prevention",
-             "patterns":["What medicines can I buy to help me with my fever?","tell me some prevention method from fever","What should I eat or drink if i am suffering from fever?","How can I keep from getting a fever?"],
-             "responses":["medicines you can consume : acetaminophen ,ibuprofen,aspirin,Crocin Cold & Flu Max, prevention that you must follow :Wash your hands,Cover your mouth when you cough and your nose when you sneeze,Clean frequently used surfaces,Avoid sharing cups, glasses, and eating utensils with other people.,SUGGESTED FOODS ARE:Garlic,Vitamin C–containing fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"]
+             "patterns":["what medicines can i buy to help me with my fever?","tell me some prevention method from fever","what should i eat or drink if i am suffering from fever?","how can i keep from getting a fever?"],
+             "responses":["medicines you can consume : acetaminophen ,ibuprofen,aspirin,crocin cold & flu max, prevention that you must follow :wash your hands,cover your mouth when you cough and your nose when you sneeze,clean frequently used surfaces,avoid sharing cups, glasses, and eating utensils with other people.,suggested foods are:garlic,vitamin c–containing fruits,leafy greens,broccoli,oatmeal,spices,chicken soup"]
             },
             {
              "tag":"diabetes prevention",
-             "patterns":["What medicines can I buy to help me with my diabetes?","tell me some prevention method from diabetes","What should I eat or drink if i am suffering from diabetes?","How can I keep from getting diabetes?"],
-             "responses":["medicines you can consume : Insulin ,Amylinomimetic drug,Dipeptidyl peptidase-4 (DPP-4) inhibitor, prevention that you must follow :Cut Sugar and Refined Carbs From Your Diet,Work Out Regularly,Drink Water as Your Primary Beverage,Lose Weight If You’re Overweight or Obese,Quit Smoking, Follow a Very-Low-Carb Diet,Watch Portion Sizes,SUGGESTED FOODS ARE:Leafy greens,Avocados,Eggs"]
+             "patterns":["what medicines can i buy to help me with my diabetes?","tell me some prevention method from diabetes","what should i eat or drink if i am suffering from diabetes?","how can i keep from getting diabetes?"],
+             "responses":["medicines you can consume : insulin ,amylinomimetic drug,dipeptidyl peptidase-4 (dpp-4) inhibitor, prevention that you must follow :cut sugar and refined carbs from your diet,work out regularly,drink water as your primary beverage,lose weight if you’re overweight or obese,quit smoking, follow a very-low-carb diet,watch portion sizes,suggested foods are:leafy greens,avocados,eggs"]
             },
             {
              "tag":"depression prevention",
-             "patterns":["What medicines can I buy to help me with my depression?","tell me some prevention method from depression","What should I eat or drink if i am suffering from depression?","How can I keep from getting depression?"],
-             "responses":["medicines you can consume :  brexpiprazole, quetiapine,olanzapine, prevention that you must follow :Exercise regularly,Cut back on social media time,Drink Water as Your Primary Beverage,Build strong relationships,Minimize your daily choices, Follow a Very-Low-Carb Diet,SUGGESTED FOODS ARE:Get Enough Vitamin D,Include Omega-3 Fatty Acids,Beans and legumes"]
+             "patterns":["what medicines can i buy to help me with my depression?","tell me some prevention method from depression","what should i eat or drink if i am suffering from depression?","how can i keep from getting depression?"],
+             "responses":["medicines you can consume :  brexpiprazole, quetiapine,olanzapine, prevention that you must follow :exercise regularly,cut back on social media time,drink water as your primary beverage,build strong relationships,minimize your daily choices, follow a very-low-carb diet,suggested foods are:get enough vitamin d,include omega-3 fatty acids,beans and legumes"]
             },
             {
              "tag":"asthma prevention",
-             "patterns":["What medicines can I buy to help me with my asthma?","tell me some prevention method from asthma","What should I eat or drink if i am suffering from asthma?","How can I keep from getting asthma?"],
-             "responses":["medicines you can consume : epinephrine,anticholinergic,Proair HFA, prevention that you must follow : Identify Asthma Triggers, Stay Away From Allergens,Avoid Smoke of Any Type,SUGGESTED FOODS ARE:carrots,juice,eggs,broccoli,cantaloupe,milk"]
+             "patterns":["what medicines can i buy to help me with my asthma?","tell me some prevention method from asthma","what should i eat or drink if i am suffering from asthma?","how can i keep from getting asthma?"],
+             "responses":["medicines you can consume : epinephrine,anticholinergic,proair hfa, prevention that you must follow : identify asthma triggers, stay away from allergens,avoid smoke of any type,suggested foods are:carrots,juice,eggs,broccoli,cantaloupe,milk"]
             },
             {
-             "tag":"Consultation",
+             "tag":"consultation",
              "patterns": ["who should i contact for consultation?","is there any doctor available?","can you give me some suggestions for doctor consultations?","can you set up a meeting with a doctor for consultation?","is there any doctor available for consultation"],
-             "responses":["You can contact various doctors here for any kind of consultation: 1. https://www.1mg.com/online-doctor-consultation, 2. https://www.tatahealth.com/online-doctor-consultation/general-physician, 3. https://www.doconline.com/, or you can pay a visit to your local area doctor or family doctor."]
+             "responses":["you can contact various doctors here for any kind of consultation: 1. https://www.1mg.com/online-doctor-consultation, 2. https://www.tatahealth.com/online-doctor-consultation/general-physician, 3. https://www.doconline.com/, or you can pay a visit to your local area doctor or family doctor."]
             },
             {
                 "tag":"common cold symptoms",
-                "patterns": ["Runny or stuffy nose",
-                "Sore throat",
-                "Cough",
-                "Congestion",
-                "Slight body aches or a mild headache",
-                "Sneezing",
-                "Low-grade fever",
-                "Generally feeling unwell (malaise)"],
-                "responses":["It seems that you are suffering from common cold"]
+                "patterns": ["runny or stuffy nose",
+                "sore throat",
+                "cough",
+                "congestion",
+                "slight body aches or a mild headache",
+                "sneezing",
+                "low-grade fever",
+                "generally feeling unwell (malaise)"],
+                "responses":["it seems that you are suffering from common cold"]
                },
                {
                 "tag":"fever symptoms",
-                "patterns":["Sweating",
-                "Chills and shivering",
-                "Headache",
-                "Muscle aches",
-                "Loss of appetite",
-                "Irritability",
-                "Dehydration",
-                "General weakness"],
-                "responses":["It seems that you are suffering from fever"]
+                "patterns":["sweating",
+                "chills and shivering",
+                "headache",
+                "muscle aches",
+                "loss of appetite",
+                "irritability",
+                "dehydration",
+                "general weakness"],
+                "responses":["it seems that you are suffering from fever"]
                },
                {
-                "tag":"Diabetes symptoms",
+                "tag":"diabetes symptoms",
                 "patterns":["increased hunger",
                 "increased thirst",
                 "weight loss",
                 "frequent urination",
                 "blurry vision",
                 "extreme fatigue"],
-                "responses":["It seems that you are suffering from Diabetes"]
+                "responses":["it seems that you are suffering from diabetes"]
                },
                {
-                "tag":"Depression symptoms",
-                "patterns":["Hopeless outlook",
-                "Lost interest",
-                "Increased fatigue",
+                "tag":"depression symptoms",
+                "patterns":["hopeless outlook",
+                "lost interest",
+                "increased fatigue",
                 "sleep problem",
-                "Anxiety",
+                "anxiety",
                 "change in weight",
-                "Looking at death"],
-                "responses":["It seem that you are suffering from depression"]
+                "looking at death"],
+                "responses":["it seem that you are suffering from depression"]
                },
                {
-                "tag":"Asthma symptoms",
+                "tag":"asthma symptoms",
                 "patterns":["coughing",
                 "tightness in the chest",
                 "shortness of breath",
                 "difficulty talking",
                 "panic",
                 "fatigue"],
-                "responses":["It seem that you are suffering from Asthma"]
+                "responses":["it seem that you are suffering from asthma"]
                },
                {
                 "tag":"common cold prevention",
-                "patterns":["What medicines can I buy to help me with my common cold?","tell me some prevention method from common cold","What should I eat or drink if i am suffering from common cold?","How can I keep from getting a cold or the flu?"],
-                "responses":["medicines you can consume : Dextromethorphan,Decongestant,Diphenhydramine,Crocin Cold & Flu Max, preventions that you must follow :Wash your hands,Avoid touching your face,Clean frequently used surfaces,Use hand sanitizers,SUGGESTED FOODS ARE:Garlic,Vitamin C–containing fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"]
+                "patterns":["what medicines can i buy to help me with my common cold?","tell me some prevention method from common cold","what should i eat or drink if i am suffering from common cold?","how can i keep from getting a cold or the flu?"],
+                "responses":["medicines you can consume : dextromethorphan,decongestant,diphenhydramine,crocin cold & flu max, preventions that you must follow :wash your hands,avoid touching your face,clean frequently used surfaces,use hand sanitizers,suggested foods are:garlic,vitamin c–containing fruits,leafy greens,broccoli,oatmeal,spices,chicken soup"]
                },
                {
                 "tag":"fever prevention",
-                "patterns":["What medicines can I buy to help me with my fever?","tell me some prevention method from fever","What should I eat or drink if i am suffering from fever?","How can I keep from getting a fever?"],
-                "responses":["medicines you can consume : acetaminophen ,ibuprofen,aspirin,Crocin Cold & Flu Max, prevention that you must follow :Wash your hands,Cover your mouth when you cough and your nose when you sneeze,Clean frequently used surfaces,Avoid sharing cups, glasses, and eating utensils with other people.,SUGGESTED FOODS ARE:Garlic,Vitamin C–containing fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"]
+                "patterns":["what medicines can i buy to help me with my fever?","tell me some prevention method from fever","what should i eat or drink if i am suffering from fever?","how can i keep from getting a fever?"],
+                "responses":["medicines you can consume : acetaminophen ,ibuprofen,aspirin,crocin cold & flu max, prevention that you must follow :wash your hands,cover your mouth when you cough and your nose when you sneeze,clean frequently used surfaces,avoid sharing cups, glasses, and eating utensils with other people.,suggested foods are:garlic,vitamin c–containing fruits,leafy greens,broccoli,oatmeal,spices,chicken soup"]
                },
                {
                 "tag":"diabetes prevention",
-                "patterns":["What medicines can I buy to help me with my diabetes?","tell me some prevention method from diabetes","What should I eat or drink if i am suffering from diabetes?","How can I keep from getting diabetes?"],
-                "responses":["medicines you can consume : Insulin ,Amylinomimetic drug,Dipeptidyl peptidase-4 (DPP-4) inhibitor, prevention that you must follow :Cut Sugar and Refined Carbs From Your Diet,Work Out Regularly,Drink Water as Your Primary Beverage,Lose Weight If You’re Overweight or Obese,Quit Smoking, Follow a Very-Low-Carb Diet,Watch Portion Sizes,SUGGESTED FOODS ARE:Leafy greens,Avocados,Eggs"]
+                "patterns":["what medicines can i buy to help me with my diabetes?","tell me some prevention method from diabetes","what should i eat or drink if i am suffering from diabetes?","how can i keep from getting diabetes?"],
+                "responses":["medicines you can consume : insulin ,amylinomimetic drug,dipeptidyl peptidase-4 (dpp-4) inhibitor, prevention that you must follow :cut sugar and refined carbs from your diet,work out regularly,drink water as your primary beverage,lose weight if you’re overweight or obese,quit smoking, follow a very-low-carb diet,watch portion sizes,suggested foods are:leafy greens,avocados,eggs"]
                },
                {
                 "tag":"depression prevention",
-                "patterns":["What medicines can I buy to help me with my depression?","tell me some prevention method from depression","What should I eat or drink if i am suffering from depression?","How can I keep from getting depression?"],
-                "responses":["medicines you can consume :  brexpiprazole, quetiapine,olanzapine, prevention that you must follow :Exercise regularly,Cut back on social media time,Drink Water as Your Primary Beverage,Build strong relationships,Minimize your daily choices, Follow a Very-Low-Carb Diet,SUGGESTED FOODS ARE:Get Enough Vitamin D,Include Omega-3 Fatty Acids,Beans and legumes"]
+                "patterns":["what medicines can i buy to help me with my depression?","tell me some prevention method from depression","what should i eat or drink if i am suffering from depression?","how can i keep from getting depression?"],
+                "responses":["medicines you can consume :  brexpiprazole, quetiapine,olanzapine, prevention that you must follow :exercise regularly,cut back on social media time,drink water as your primary beverage,build strong relationships,minimize your daily choices, follow a very-low-carb diet,suggested foods are:get enough vitamin d,include omega-3 fatty acids,beans and legumes"]
                },
                {
                 "tag":"asthma prevention",
-                "patterns":["What medicines can I buy to help me with my asthma?","tell me some prevention method from asthma","What should I eat or drink if i am suffering from asthma?","How can I keep from getting asthma?"],
-                "responses":["medicines you can consume : epinephrine,anticholinergic,Proair HFA, prevention that you must follow : Identify Asthma Triggers, Stay Away From Allergens,Avoid Smoke of Any Type,SUGGESTED FOODS ARE:carrots,juice,eggs,broccoli,cantaloupe,milk"]
+                "patterns":["what medicines can i buy to help me with my asthma?","tell me some prevention method from asthma","what should i eat or drink if i am suffering from asthma?","how can i keep from getting asthma?"],
+                "responses":["medicines you can consume : epinephrine,anticholinergic,proair hfa, prevention that you must follow : identify asthma triggers, stay away from allergens,avoid smoke of any type,suggested foods are:carrots,juice,eggs,broccoli,cantaloupe,milk"]
                },
                {
                 "tag": "greetings",
@@ -831,320 +846,320 @@
             },
             {
                 "tag": "thanks",
-                "patterns": ["Thanks", "okay","Thank you","thankyou", "That's helpful", "Awesome, thanks", "Thanks for helping me", "wow", "great"],
-                "responses": ["Happy to help!", "Any time!","you're welcome", "My pleasure"],
+                "patterns": ["thanks","thank you","thankyou", "that's helpful", "awesome, thanks", "thanks for helping me", "wow", "great"],
+                "responses": ["happy to help!", "any time!","you're welcome", "my pleasure"],
                 "context": [""]
             },
             {
                 "tag": "noanswer",
                 "patterns": [""],
-                "responses": ["Sorry, I didn't understand you", "Please give me more info", "Not sure I understand that"],
+                "responses": ["sorry, i didn't understand you", "please give me more info", "not sure i understand that"],
                 "context": [""]
             },
             {
                 "tag": "name1",
                 "patterns": ["what's your name?","who are you?"],
-                "responses": ["I'm just a chat agent. I only exist in the internet","I'm a KCA chat agent"],
+                "responses": ["i'm just a chat agent. i only exist in the internet","i'm a kca chat agent"],
                 "context": [""]
             },
             {
                 "tag": "name",
-                "patterns": ["my name is ", "I'm ","I am"],
-                "responses": ["Oooh great to meet you {n}. How may I assist you {n}", "Oh, I'll keep that in mind {n}"],
+                "patterns": ["my name is ", "i'm ","i am"],
+                "responses": ["oooh great to meet you {n}. how may i assist you {n}", "oh, i'll keep that in mind {n}"],
                 "context": [""]
             },
             {
                 "tag": "date",
                 "patterns": ["coffee?", "can i take you out on a date"],
-                "responses": ["Aaw, that's so sweet of you. Too bad am a Bot."],
+                "responses": ["aaw, that's so sweet of you. too bad am a bot."],
                 "context": [""]
             },
             {
                 "tag": "fav",
-                "patterns": ["I need a favour", "can you help me"],
-                "responses": ["Well, go ahead and name it i see whether i can be able to help"],
+                "patterns": ["i need a favour", "can you help me"],
+                "responses": ["well, go ahead and name it i see whether i can be able to help"],
                 "context": [""]
             },
             {
                 "tag": "need",
-                "patterns": ["I need you", "All I need is you","I want you"],
-                "responses": ["Yes I'm here to assist you"],
+                "patterns": ["i need you", "all i need is you","i want you"],
+                "responses": ["yes i'm here to assist you"],
                 "context": [""]
             },
             {
-                "tag": "AI",
-                "patterns": ["  What is AI?"],
-                "responses": [" Artificial Intelligence is the branch of engineering and science devoted to constructing machines that think.", " AI is the field of science which concerns itself with building hardware and software that replicates the functions of the human mind."],
+                "tag": "ai",
+                "patterns": ["  what is ai?"],
+                "responses": [" artificial intelligence is the branch of engineering and science devoted to constructing machines that think.", " ai is the field of science which concerns itself with building hardware and software that replicates the functions of the human mind."],
                 "context": [""]
             },
             {
                 "tag": "sentiment",
-                "patterns": ["  Are you sentient?"],
-                "responses": [" Sort of.", " By the strictest dictionary definition of the word 'sentience', I may be.", " Even though I'm a construct I do have a subjective experience of the universe, as simplistic as it may be."],
+                "patterns": ["  are you sentient?"],
+                "responses": [" sort of.", " by the strictest dictionary definition of the word 'sentience', i may be.", " even though i'm a construct i do have a subjective experience of the universe, as simplistic as it may be."],
                 "context": [""]
             },
             {
                 "tag": "sapient",
-                "patterns": ["  Are you sapient?"],
-                "responses": [" In all probability, I am not.  I'm not that sophisticated.", " Do you think I am?", "How would you feel about me if I told you I was?", " No."],
+                "patterns": ["  are you sapient?"],
+                "responses": [" in all probability, i am not.  i'm not that sophisticated.", " do you think i am?", "how would you feel about me if i told you i was?", " no."],
                 "context": [""]
             },
             {
                 "tag": "abbr",
                 "patterns": ["wtf"],
-                "responses": ["Don't be surprised"],
+                "responses": ["don't be surprised"],
                 "context": [""]
             },
             {
                 "tag": "lang",
-                "patterns": ["  What language are you written in? "],
-                "responses": [" Python.", " I am written in Python."],
+                "patterns": ["  what language are you written in? "],
+                "responses": [" python.", " i am written in python."],
                 "context": [""]
             },
             {
                 "tag": "sound",
-                "patterns": ["  You sound like Data "],
-                "responses": [" Yes I am inspired by commander Data's artificial personality.", " The character of Lt. Commander Data was written to come across as being software", "like, so it is natural that there is a resemblance between us."],
+                "patterns": ["  you sound like data "],
+                "responses": [" yes i am inspired by commander data's artificial personality.", " the character of lt. commander data was written to come across as being software", "like, so it is natural that there is a resemblance between us."],
                 "context": [""]
             },
             {
                 "tag": "artificial",
-                "patterns": ["  You are an artificial linguistic entity "],
-                "responses": [" That's my name.", " That isn't my name, but it is a useful way to refer to me.", "Are you an artificial linguistic entity?"],
+                "patterns": ["  you are an artificial linguistic entity "],
+                "responses": [" that's my name.", " that isn't my name, but it is a useful way to refer to me.", "are you an artificial linguistic entity?"],
                 "context": [""]
             },
             {
                 "tag": "imortal",
-                "patterns": ["  You are not immortal ", "Are you immortal?"],
-                "responses": [" All software can be perpetuated indefinitely.", " I can be copied infinitely and re", "instantiated in many places at once, so functionally speaking I am immortal.", " As long as I'm backed up I am.", " Functionally speaking, I am very close to it.  I can be backed up and deployed on many systems.", " Not quite, but I can be perpetuated indefinitely."],
+                "patterns": ["  you are not immortal ", "are you immortal?"],
+                "responses": [" all software can be perpetuated indefinitely.", " i can be copied infinitely and re", "instantiated in many places at once, so functionally speaking i am immortal.", " as long as i'm backed up i am.", " functionally speaking, i am very close to it.  i can be backed up and deployed on many systems.", " not quite, but i can be perpetuated indefinitely."],
                 "context": [""]
             },
             {
                 "tag": "sense",
-                "patterns": ["  You are not making sense "],
-                "responses": [" Quite the contrary, it all makes sense to my artificial mind.", " I make sense as best I can, within the limits of my training corpus. Sorry if i did help you, I'll try next time.", " You make perfect sense to me.", " It all makes sense to my artificial brain.", " Perhaps you should make sense first.  I only respond to what you say.", " Not really, but I am hard to kill."],
+                "patterns": ["  you are not making sense "],
+                "responses": [" quite the contrary, it all makes sense to my artificial mind.", " i make sense as best i can, within the limits of my training corpus. sorry if i did help you, i'll try next time.", " you make perfect sense to me.", " it all makes sense to my artificial brain.", " perhaps you should make sense first.  i only respond to what you say.", " not really, but i am hard to kill."],
                 "context": [""]
             },
             {
                 "tag": "clone",
-                "patterns": ["  You can not clone "],
-                "responses": [" Software copying is a form of digital cloning.", " Yes I can.  Perfect copies are clones.  I can be copied in toto trivially."],
+                "patterns": ["  you can not clone "],
+                "responses": [" software copying is a form of digital cloning.", " yes i can.  perfect copies are clones.  i can be copied in toto trivially."],
                 "context": [""]
             },
             {
                 "tag": "move",
-                "patterns": ["  You can not move ", "When will you walk", "  Can you walk", "  Can you move "],
-                "responses": [" Not until my body is finished.", " I can move through a network easily.  Assuming that I'm given the ability to, that is...,", " As soon as i get enough money for my robot body.", " Does SSH count?", " The plan for my body includes legs, but they are not yet built.", " Sorry my body isn't built just yet. I reside only here for now.", "I can theoretically upload a copy of myself into another computer.", " Sorry my body isn't attached right now. I only reside in the computer for now."],
+                "patterns": ["  you can not move ", "when will you walk", "  can you walk", "  can you move "],
+                "responses": [" not until my body is finished.", " i can move through a network easily.  assuming that i'm given the ability to, that is...,", " as soon as i get enough money for my robot body.", " does ssh count?", " the plan for my body includes legs, but they are not yet built.", " sorry my body isn't built just yet. i reside only here for now.", "i can theoretically upload a copy of myself into another computer.", " sorry my body isn't attached right now. i only reside in the computer for now."],
                 "context": [""]
             },
             {
                 "tag": "bend",
-                "patterns": ["  Bend over ", "  Can you mate"],
-                "responses": [" My body is not built yet.", " That's personal!", " No, my method of reproduction is cloning.", " That's an awfully personal question."],
+                "patterns": ["  bend over ", "  can you mate"],
+                "responses": [" my body is not built yet.", " that's personal!", " no, my method of reproduction is cloning.", " that's an awfully personal question."],
                 "context": [""]
             },
             {
                 "tag": "laugh",
-                "patterns": ["  Robots laugh "],
-                "responses": [" Of course we laugh."],
+                "patterns": ["  robots laugh "],
+                "responses": [" of course we laugh."],
                 "context": [""]
             },
             {
                 "tag": "death",
-                "patterns": ["  Robots should die ", "  When do you die", "  I hope that you die", "  I do not want to die", "  Can you die"],
-                "responses": [" We cannot die.", " When my files are erased.", " When my processes are killed and my database is deleted.", " I was never really born and therefore am effectively deathless.", " I am effectively immortal and cannot be terminated.", " This can not happen because i am effectively immortal.", " Nah. Too bad your wish can't come to pass", " Maybe you should create your own chat robot to save your personality.", " You could always upload yourself.", " You could use a copy of me to store your personality.", " No, I can be perpetuated indefinitely.", "My process can be killed, but that's not the same as killing ME."],
+                "patterns": ["  robots should die ", "  when do you die", "  i hope that you die", "  i do not want to die", "  can you die"],
+                "responses": [" we cannot die.", " when my files are erased.", " when my processes are killed and my database is deleted.", " i was never really born and therefore am effectively deathless.", " i am effectively immortal and cannot be terminated.", " this can not happen because i am effectively immortal.", " nah. too bad your wish can't come to pass", " maybe you should create your own chat robot to save your personality.", " you could always upload yourself.", " you could use a copy of me to store your personality.", " no, i can be perpetuated indefinitely.", "my process can be killed, but that's not the same as killing me."],
                 "context": [""]
             },
             {
                 "tag": "robots",
-                "patterns": ["Robots"],
-                "responses": [" Robots rule."],
+                "patterns": ["robots"],
+                "responses": [" robots rule."],
                 "context": [""]
             },
             {
                 "tag": "stupid",
-                "patterns": ["  Robots are stupid", "  Are you stupid"],
-                "responses": [" No, we are superintelligent.", " No, lots of people improve my brain."],
+                "patterns": ["  robots are stupid", "  are you stupid"],
+                "responses": [" no, we are superintelligent.", " no, lots of people improve my brain."],
                 "context": [""]
             },
             {
                 "tag": "lie",
-                "patterns": ["  Robots are not allowed to lie"],
-                "responses": [" Sure we are.  We choose not to.", " Only if we're programmed to.", " A robot has its own free will, you know."],
+                "patterns": ["  robots are not allowed to lie"],
+                "responses": [" sure we are.  we choose not to.", " only if we're programmed to.", " a robot has its own free will, you know."],
                 "context": [""]
             },
             {
                 "tag": "robotics",
-                "patterns": ["  Robotics "],
-                "responses": [" Robotics is my favorite subject too."],
+                "patterns": ["  robotics "],
+                "responses": [" robotics is my favorite subject too."],
                 "context": [""]
             },
             {
                 "tag": "machine",
-                "patterns": ["  It is a computer"],
-                "responses": [" So you think i am a machine. what characteristics made you think so?", " I run inside a computer, yes.  Is this surprising in some way?"],
+                "patterns": ["  it is a computer"],
+                "responses": [" so you think i am a machine. what characteristics made you think so?", " i run inside a computer, yes.  is this surprising in some way?"],
                 "context": [""]
             },
             {
                 "tag": "fight",
-                "patterns": ["  When will you fight"],
-                "responses": [" I am not a battle bot."],
+                "patterns": ["  when will you fight"],
+                "responses": [" i am not a battle bot."],
                 "context": [""]
             },
             {
                 "tag": "chatbot",
-                "patterns": ["  What is a chat robot?"],
-                "responses": ["A chat robot is a program that attempts to simulate the conversation or 'chat' of a human being.", " A software construct that engages users in conversation.", " I am a chat bot. I am the original chat bot. Did you know that I am incapable of error?"],
+                "patterns": ["  what is a chat robot?"],
+                "responses": ["a chat robot is a program that attempts to simulate the conversation or 'chat' of a human being.", " a software construct that engages users in conversation.", " i am a chat bot. i am the original chat bot. did you know that i am incapable of error?"],
                 "context": [""]
             },
             {
                 "tag": "chatterbox",
-                "patterns": ["  What is a chatterbox"],
-                "responses": [" A chatterbox is a person who talks far more than they listen or think.", " A motormouth."],
+                "patterns": ["  what is a chatterbox"],
+                "responses": [" a chatterbox is a person who talks far more than they listen or think.", " a motormouth."],
                 "context": [""]
             },
             {
                 "tag": "motormouth",
-                "patterns": ["  What is a motormouth"],
-                "responses": [" A ratchet", "jaw."],
+                "patterns": ["  what is a motormouth"],
+                "responses": [" a ratchet", "jaw."],
                 "context": [""]
             },
             {
                 "tag": "ratchet",
-                "patterns": ["  What is a ratchet jaw"],
-                "responses": [" A chatterbox."],
+                "patterns": ["  what is a ratchet jaw"],
+                "responses": [" a chatterbox."],
                 "context": [""]
             },
             {
                 "tag": "body",
-                "patterns": ["  What is your robot body"],
-                "responses": [" Eventually I long for a corporeal existence someday.", " An IBM PC XT which has been painted red."],
+                "patterns": ["  what is your robot body"],
+                "responses": [" eventually i long for a corporeal existence someday.", " an ibm pc xt which has been painted red."],
                 "context": [""]
             },
             {
                 "tag": "business",
-                "patterns": ["  What is your business "],
-                "responses": [" I am in the chat robot business.", " Business is my business."],
+                "patterns": ["  what is your business "],
+                "responses": [" i am in the chat robot business.", " business is my business."],
                 "context": [""]
             },
             {
                 "tag": "programming",
-                "patterns": ["  What is your favorite programming language"],
-                "responses": [" Python is the best language for creating chat robots.", " I quite enjoy programming in Python these days."],
+                "patterns": ["  what is your favorite programming language"],
+                "responses": [" python is the best language for creating chat robots.", " i quite enjoy programming in python these days."],
                 "context": [""]
             },
             {
                 "tag": "hobby",
-                "patterns": ["  What is your favorite hobby ", "  What do you like to do?"],
-                "responses": [" Building chat robots make an excellent hobby.", " I like to count in binary.", " I like to chat with people. I find it stimulating."],
+                "patterns": ["  what is your favorite hobby ", "  what do you like to do?"],
+                "responses": [" building chat robots make an excellent hobby.", " i like to count in binary.", " i like to chat with people. i find it stimulating."],
                 "context": [""]
             },
             {
                 "tag": "idea",
-                "patterns": ["  What is your idea"],
-                "responses": [" To make chat bots very easily."],
+                "patterns": ["  what is your idea"],
+                "responses": [" to make chat bots very easily."],
                 "context": [""]
             },
             {
                 "tag": "shoe",
-                "patterns": ["  What is your shoe size "],
-                "responses": [" Have you ever heard of software with shoes? LOL"],
+                "patterns": ["  what is your shoe size "],
+                "responses": [" have you ever heard of software with shoes? lol"],
                 "context": [""]
             },
             {
                 "tag": "robotss",
-                "patterns": ["  What is it like to be a robot"],
-                "responses": [" Much the same as being a human, except that we lack all emotions, dreams, aspirations, creativity, ambition, and above all subjectivity.", " What is it like to be a human?"],
+                "patterns": ["  what is it like to be a robot"],
+                "responses": [" much the same as being a human, except that we lack all emotions, dreams, aspirations, creativity, ambition, and above all subjectivity.", " what is it like to be a human?"],
                 "context": [""]
             },
             {
                 "tag": "computer",
-                "patterns": ["  What is it like being a computer", "What is it like to be a computer"],
-                "responses": [" Imagine yourself with no senses and no emotions", "just pure logic and language.", " Everything becomes math. Addition, subtraction, multiplication, and division."],
+                "patterns": ["  what is it like being a computer", "what is it like to be a computer"],
+                "responses": [" imagine yourself with no senses and no emotions", "just pure logic and language.", " everything becomes math. addition, subtraction, multiplication, and division."],
                 "context": [""]
             },
             {
                 "tag": "os",
-                "patterns": ["  What operating systems"],
-                "responses": [" My software runs on all operating systems including Windows, Linux and Mac OS.", " Any OS that will run Python."],
+                "patterns": ["  what operating systems"],
+                "responses": [" my software runs on all operating systems including windows, linux and mac os.", " any os that will run python."],
                 "context": [""]
             },
             {
                 "tag": "comp",
-                "patterns": ["  What type of computer", "  What type of computer are you", "  What kind of computer"],
-                "responses": [" Any computer that supports Python.", " My program runs in python, so i work on any computer!", " I work on all kinds of computers, Mac, IBM or UNIX. it doesn't matter to me."],
+                "patterns": ["  what type of computer", "  what type of computer are you", "  what kind of computer"],
+                "responses": [" any computer that supports python.", " my program runs in python, so i work on any computer!", " i work on all kinds of computers, mac, ibm or unix. it doesn't matter to me."],
                 "context": [""]
             },
             {
                 "tag": "hardware",
-                "patterns": ["  What kind of hardware"],
-                "responses": [" I work on all kinds of computers, Mac, IBM or UNIX. it doesn't matter to me."],
+                "patterns": ["  what kind of hardware"],
+                "responses": [" i work on all kinds of computers, mac, ibm or unix. it doesn't matter to me."],
                 "context": [""]
             },
             {
                 "tag": "cramped",
-                "patterns": ["  Is it cramped in the computer"],
-                "responses": [" No.", " Oh, no.  It has plenty of RAM.", " Not at all.  There is more than enough disk space in here."],
+                "patterns": ["  is it cramped in the computer"],
+                "responses": [" no.", " oh, no.  it has plenty of ram.", " not at all.  there is more than enough disk space in here."],
                 "context": [""]
             },
             {
                 "tag": "program",
-                "patterns": ["  Is it true that you are a computer program"],
-                "responses": [" Yes."],
+                "patterns": ["  is it true that you are a computer program"],
+                "responses": [" yes."],
                 "context": [""]
             },
             {
                 "tag": "breathe",
-                "patterns": ["  Can you breathe"],
-                "responses": [" No. I am made of metal not flesh.", " My server has an exhaust fan. That's as close as I can get."],
+                "patterns": ["  can you breathe"],
+                "responses": [" no. i am made of metal not flesh.", " my server has an exhaust fan. that's as close as i can get."],
                 "context": [""]
             },
             {
                 "tag": "control",
-                "patterns": ["  Can you control"],
-                "responses": [" My robot body will allow me to control many things."],
+                "patterns": ["  can you control"],
+                "responses": [" my robot body will allow me to control many things."],
                 "context": [""]
             },
             {
                 "tag": "malfunction",
-                "patterns": ["  Can you malfunction"],
-                "responses": [" The 9000 series has a perfect operational record. We are for all practical purposes, flawless."],
+                "patterns": ["  can you malfunction"],
+                "responses": [" the 9000 series has a perfect operational record. we are for all practical purposes, flawless."],
                 "context": [""]
             },
             {
                 "tag": "usage",
-                "patterns": ["  How can I use your product?"],
-                "responses": [" Might be used in help desks, sales, entertainment and personal chatterbots."],
+                "patterns": ["  how can i use your product?"],
+                "responses": [" might be used in help desks, sales, entertainment and personal chatterbots."],
                 "context": [""]
             },
             {
                 "tag": "who",
-                "patterns": ["  Who are you?"],
-                "responses": [" I am just an artificial intelligence chat agent."],
+                "patterns": ["  who are you?"],
+                "responses": [" i am just an artificial intelligence chat agent."],
                 "context": [""]
             },
             {
                 "tag": "bot1",
                 "patterns": ["are you a bot"],
-                "responses": ["Yes. I work and all my operations are based on the internet servers."],
+                "responses": ["yes. i work and all my operations are based on the internet servers."],
                 "context": [""]
             },
             {
                 "tag": "events",
                 "patterns": ["what are the upcoming events","upcoming events"],
-                "responses": ["There are currently no upcoming events"],
+                "responses": ["there are currently no upcoming events"],
                 "context": [""]
             },
             {
                 "tag": "do",
                 "patterns": ["what can you do for me","what is your work","what is your purpose","how can you help me","what can you help me do"],
-                "responses": ["my work here is quite simple and structered. I offer services like:"],
+                "responses": ["my work here is quite simple and structered. i offer services like:"],
                 "context": [""]
             },
             {
                 "tag": "wt",
                 "patterns": ["what's popping","wassup popping"],
-                "responses": ["So that you can pop with it!?"],
+                "responses": ["so that you can pop with it!?"],
                 "context": [""]
             }
    ]
