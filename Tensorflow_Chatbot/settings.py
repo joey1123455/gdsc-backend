@@ -5,7 +5,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = 'i1u63^ba=6#vzc_0t6m_!m$)iejuq@v9!6dqq!jgzpkj=^9#t2'
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -120,10 +120,13 @@ CORS_ALLOWED_ORIGINS = [
     # "http://127.0.0.1:3001",
     # 'http://34.136.104.12:8000',
     'http://*',
+    'https://*',
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     "http://127.0.0.1:3001",
     "http://127.0.0.1:8000",
     'http://34.136.104.12:8000'
+    'http://*',
+    'https://*'
 ]
